@@ -1,0 +1,26 @@
+#python
+import random
+user=input("Enter Rock,paper,Scissors:").lower()
+print('user:',user)
+machine=random.choice(['Rock','Paper','Scissor']).lower()
+print('machine:',machine)
+if user=='rock' and machine=="paper":
+    print("Machine won")
+elif user=='rock' and machine=='scissor':
+    print('You won')
+elif user=='paper' and machine=='rock':
+    print('you won')
+elif user=='paper' and machine=='scissor':
+    print('Machine won')
+elif user=='scissor' and machine=='rock':
+    print('machine won')
+elif user=='scissor' and machine=='paper':
+    print('you won')
+elif user=='paper' and machine=='paper':
+    print("It's draw")
+elif user=='rock' and machine=='rock':
+    print("It's draw")
+elif user=='scissor' and machine=='scissor':
+    print("It's draw")
+else:
+    print('enter correct value')
